@@ -2,7 +2,7 @@ package: github.com/libkermit/docker-check
 
 import:
 - package: github.com/libkermit/docker
-  version: f0273a685051e51f2ac0ff8eabfa1f756b6d7e2a
+  version: 57c2dbabf1f996e0d125bee7aec337d713006024
 - package: github.com/Azure/go-ansiterm
   version: 388960b655244e76e24c75f48631564eaefade62
 - package: github.com/cloudfoundry-incubator/candiedyaml
@@ -18,7 +18,7 @@ import:
 - package: github.com/docker/go-units
   version: 651fc226e7441360384da338d0fd37f2440ffbe3
 - package: github.com/docker/libcompose
-  version: 345306ed885ac7c6d5de6f76789eacd0169e6f85
+  version: 8ee7bcc364f7b8194581a3c6bd9fa019467c7873
 - package: github.com/flynn/go-shlex
   version: 3f9db97f856818214da2e1057f8ad84803971cff
 - package: github.com/gorilla/context
