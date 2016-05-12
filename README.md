@@ -1,6 +1,6 @@
 # Libkermit
 [![GoDoc](https://godoc.org/github.com/libkermit/docker-check?status.png)](https://godoc.org/github.com/libkermit/docker-check)
-[![Build Status](https://travis-ci.orglibkermit/docker-check.svg?branch=master)](https://travis-ci.org/libkermit/docker-check)
+[![Build Status](https://travis-ci.org/libkermit/docker-check.svg?branch=master)](https://travis-ci.org/libkermit/docker-check)
 [![Go Report Card](https://goreportcard.com/badge/github.com/libkermit/docker-check)](https://goreportcard.com/report/github.com/libkermit/docker-check)
 [![License](https://img.shields.io/github/license/libkermit/docker-check.svg)]()
 
