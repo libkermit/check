@@ -23,7 +23,7 @@ import (
     "testing"
 
 	"github.com/go-check/check"
-    docker "github.com/vdemeester/libkermit/docker/check"
+    docker "github.com/libkermit/docker-check"
 )
 
 // Hook up gocheck into the "go test" runner
@@ -60,7 +60,7 @@ import (
     "testing"
 
 	"github.com/go-check/check"
-    docker "github.com/vdemeester/libkermit/compose/check"
+    "github.com/libkermit/docker-check/compose"
 )
 
 // Hook up gocheck into the "go test" runner
