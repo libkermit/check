@@ -45,38 +45,3 @@ func (s *CheckSuite) TestItMyFriend(c *check.C) {
 }
 ```
 
-
-## Package `compose`
-
-This package map the `compose` package but takes a `*check.C` struct
-on all methods. The idea is to write even less. Let's write the same
-example as above.
-
-
-```go
-package yours
-
-import (
-    "testing"
-
-	"github.com/go-check/check"
-    "github.com/libkermit/docker-check/compose"
-)
-
-// Hook up gocheck into the "go test" runner
-func Test(t *testing.T) { check.TestingT(t) }
-
-type CheckSuite struct{}
-
-var _ = check.Suite(&CheckSuite{})
-
-func (s *CheckSuite) TestItMyFriend(c *check.C) {
-    project := compose.CreateProject(c, "simple", "./assets/simple.yml")
-    project.Start(c)
-
-    // Do your stuff
-
-    project.Stop(c)
-}
-```
-
