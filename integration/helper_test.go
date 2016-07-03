@@ -18,6 +18,8 @@ func setupTest(c *check.C) *docker.Project {
 func cleanContainers(c *check.C) *docker.Project {
 	client, err := dockerclient.NewEnvClient()
 	c.Assert(err, check.IsNil)
+	// FIXME(vdemeester) fix this
+	client.UpdateClientVersion(d.CurrentAPIVersion)
 
 	filterArgs := filters.NewArgs()
 	filterArgs, err = filters.ParseFlag(d.KermitLabelFilter, filterArgs)
