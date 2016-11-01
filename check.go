@@ -8,7 +8,7 @@ package docker
 import (
 	"github.com/go-check/check"
 
-	"github.com/docker/engine-api/client"
+	"github.com/docker/docker/client"
 	"github.com/libkermit/docker"
 )
 
