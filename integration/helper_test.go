@@ -3,9 +3,9 @@ package dockerit
 import (
 	"golang.org/x/net/context"
 
-	dockerclient "github.com/docker/engine-api/client"
-	"github.com/docker/engine-api/types"
-	"github.com/docker/engine-api/types/filters"
+	"github.com/docker/docker/api/types"
+	"github.com/docker/docker/api/types/filters"
+	dockerclient "github.com/docker/docker/client"
 	"github.com/go-check/check"
 	d "github.com/libkermit/docker"
 	docker "github.com/libkermit/docker-check"
