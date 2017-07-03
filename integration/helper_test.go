@@ -26,8 +26,8 @@ func cleanContainers(c *check.C) *docker.Project {
 	c.Assert(err, check.IsNil)
 
 	containers, err := client.ContainerList(context.Background(), types.ContainerListOptions{
-		All:    true,
-		Filter: filterArgs,
+		All:     true,
+		Filters: filterArgs,
 	})
 	c.Assert(err, check.IsNil)
 
