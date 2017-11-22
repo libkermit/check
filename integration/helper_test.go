@@ -8,7 +8,7 @@ import (
 	dockerclient "github.com/docker/docker/client"
 	"github.com/go-check/check"
 	d "github.com/libkermit/docker"
-	docker "github.com/libkermit/docker-check"
+	"github.com/libkermit/docker-check"
 )
 
 func setupTest(c *check.C) *docker.Project {
@@ -18,8 +18,9 @@ func setupTest(c *check.C) *docker.Project {
 func cleanContainers(c *check.C) *docker.Project {
 	client, err := dockerclient.NewEnvClient()
 	c.Assert(err, check.IsNil)
-	// FIXME(vdemeester) fix this
-	client.UpdateClientVersion(d.CurrentAPIVersion)
+
+	ping := types.Ping{APIVersion: d.CurrentAPIVersion}
+	client.NegotiateAPIVersionPing(ping)
 
 	filterArgs := filters.NewArgs()
 	filterArgs, err = filters.ParseFlag(d.KermitLabelFilter, filterArgs)
